@@ -1,0 +1,141 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+
+.field-craw a:focus, .field-craw a:active{
+	outline: none;
+	box-shadow: none;
+}
+
+.field-craw label{
+	display: block;
+	margin: 5px 0px;
+}
+.field-craw input, .field-craw select{
+	width: 100%;
+	height: 40px;
+	border-radius: 0;
+	border: 1px solid #f5f5f5;
+}
+.field_item{
+	margin-bottom: 30px;
+}
+.field-craw{
+	margin: 30px 20px 30px 0px;
+	width: auto;
+}
+.field-craw .left, .field-craw .right{
+	width: 50%;
+	float: left;
+}
+.field-craw form:before, .field-craw form:after{
+	content: '';
+	clear: both;
+	display: table;
+}
+.btn-save{
+	clear: both; 
+}
+.left, .right{
+	background: #ffffff;
+	position: relative;
+	padding: 15px;
+	border: 1px solid #f5f5f5;
+}
+.left .loading{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, .5);
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	visibility: hidden;
+}
+.left .loading.active{
+	opacity: 1;
+	visibility: visible;
+}
+.form-craw .loading img{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+.form-craw button, #demo, #stop{
+	height: 40px;
+	width: 120px;
+	border: none;
+	background: #2196F3;
+	color: #fff;
+	text-transform: uppercase;
+	margin: 10px 0 0;
+	cursor: pointer;
+    display: inline-block;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+}
+#mess{
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+.craw-item{
+	-ms-flex: 0 0 25%;
+	flex: 0 0 0 0 25%;
+	max-width: 25%;
+	padding: 0px 15px;
+	display: flex;
+    flex-flow: column;
+    margin-bottom: 30px;
+}
+.craw-item img{
+	max-width: 100%;
+	height: 200px;
+	object-fit: cover;
+}
+.full-ovl{
+	position: absolute;
+	top: 32px;
+	left: 0;
+	background: rgba(0, 0, 0, .5);
+	width: 100%;
+	height: 100%;
+	z-index: 9;
+	opacity: 0;
+	visibility: hidden;
+	transition: all .5s;
+}
+.full-ovl.open{
+	opacity: 1;
+	visibility: visible;
+}
+.full-ovl .video-content{
+	width: 1000px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.full-ovl .video-content #closes{
+    position: absolute;
+    top: -18px;
+    right: -18px;
+    width: 35px;
+    height: 35px;
+    background: #ffffff;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    line-height: 35px;
+}
+#demo{
+	margin-bottom: 30px;
+}
